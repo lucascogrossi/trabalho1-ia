@@ -110,7 +110,7 @@ def main():
     global obstacles
     
     # Arquivo para salvar obstáculos
-    obstacle_file = "obstacles.txt"
+    obstacle_file = "data/obstacles.txt"
     
     # Inicializa pygame
     pygame.init()
@@ -125,7 +125,7 @@ def main():
     
     # Carrega imagem de fundo
     try:
-        bg_image = pygame.image.load('fazenda.png')
+        bg_image = pygame.image.load('data/fazenda.png')
         bg_image = pygame.transform.scale(bg_image, (screen_width, screen_height))
     except pygame.error:
         print("Erro ao carregar imagem de fundo. Certifique-se que 'fazenda.png' existe.")

@@ -158,7 +158,7 @@ def main(obstacle_file):
     screen = pygame.display.set_mode((screen_width, screen_height))
     
     # Carrega e redimensiona a imagem de fundo para caber exatamente na tela
-    bg_image = pygame.image.load('fazenda.png')
+    bg_image = pygame.image.load('data/fazenda.png')
     bg_image = pygame.transform.scale(bg_image, (screen_width, screen_height))
     
     # Calcula tamanho exato das células para evitar problemas de dimensionamento
@@ -252,5 +252,5 @@ def main(obstacle_file):
     pygame.quit()
    
 if __name__ == "__main__":
-    obstacle_file = "obstacles.txt"
+    obstacle_file = "data/obstacles.txt"
     main(obstacle_file)
